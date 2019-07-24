@@ -17,11 +17,9 @@ struct HorizontalCountryRow : View {
                             CountryCardView(country: country)
                         }
                     }
-                Spacer()
-                .offset(x: 0, y: -130)
             }
-        }.padding(5)
-         .frame(width: UIScreen.main.bounds.width, height: 300)
+        }.padding(EdgeInsets(top: -100, leading: 5, bottom: 0, trailing: 5))
+         .frame(width: UIScreen.main.bounds.width, height: 100)
     }
 }
     

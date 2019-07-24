@@ -11,8 +11,17 @@ import SwiftUI
 struct CountryListComplicatedLayoutView : View {
     var body: some View {
         NavigationView {
-            HorizontalCountryRow()
-        }.navigationBarTitle(Text("Grid View"), displayMode: .large)
+            VStack(alignment: .leading) {
+                HorizontalCountryRow()
+                Divider()
+                    .offset(x: 0, y: -100)
+                Text("Details")
+                    .font(.largeTitle)
+                    .offset(x: 0, y: -100)
+                    .padding(.leading, 8)
+            }
+            .navigationBarTitle(Text("Grid View"), displayMode: .large)
+        }
     }
 }
 
